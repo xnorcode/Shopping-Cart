@@ -9,66 +9,108 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kikkos.shoppingcart.MainActivity">
-    <LinearLayout
-        android:orientation="horizontal"
+    tools:context="com.kikkos.shoppingcart.ui.MainActivity">
+
+    <TextView
+        android:id="@+id/cart"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="17dp"
+        android:text="Your cart is empty"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="350dp"
+        android:background="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
         <LinearLayout
             android:id="@+id/names"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <TextView
-                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Apples"/>
+                android:layout_height="65dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text="Apples:"/>
+
             <TextView
-                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pineapples"/>
+                android:layout_height="65dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text="Pineapples:"/>
+
             <TextView
-                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bananas"/>
+                android:layout_height="65dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text="Bananas:"/>
+
             <TextView
-                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Carrots"/>
+                android:layout_height="65dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text="Carrots:"/>
         </LinearLayout>
+
         <LinearLayout
-            android:layout_alignParentLeft="true"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <NumberPicker
-                android:layout_margin="10dp"
-                android:layout_width="20dp"
-                android:layout_height="17dp"/>
-            <NumberPicker
-                android:layout_margin="10dp"
-                android:layout_width="20dp"
-                android:layout_height="17dp"/>
-            <NumberPicker
-                android:layout_margin="10dp"
-                android:layout_width="20dp"
-                android:layout_height="17dp"/>
-            <NumberPicker
-                android:layout_margin="10dp"
-                android:layout_width="20dp"
-                android:layout_height="17dp"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/apples"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/pineapples"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/bananas"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/carrots"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_margin="10dp"/>
         </LinearLayout>
     </LinearLayout>
 
     <Button
+        android:id="@+id/addToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="add to cart"
-        android:id="@+id/add"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
