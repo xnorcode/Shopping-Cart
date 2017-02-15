@@ -1,9 +1,15 @@
-SHOPPING CART ANDROID APP
+# SHOPPING CART ANDROID APP
 
-THIS IS AN MVP ARCHITECTURE EXAMPLE
+ShoppingCart app is an sample that demonstrates the MVP architecture
+
+## Getting Started
+
+Download a copy of this project
+
+### Explanation
 
 View:
-checks the view only and passing items to the presenter for further action
+checks the view only in this case the main activity view and passes items to the presenter for further action
 
 Presenter:
 Receives the items in a hashmap form and creates the text that will be the cart view
@@ -14,5 +20,3 @@ has data about each item and calculates how much will be the total.
 
 In this architecture we have an absolute separation in the above mentioned 3 layers and
 each layer has no information about the other layers.
-
-This is an example to help he understand the MVP architecture and any feedback or correction is welcome.
