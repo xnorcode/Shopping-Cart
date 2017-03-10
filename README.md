@@ -1,4 +1,4 @@
-# MVP EXAMPLE - SHOPPING CART ANDROID APP
+# MVP-Android-Example - SHOPPING CART ANDROID APP
 
 ShoppingCart app is an sample that demonstrates how the MVP architecture works
 
