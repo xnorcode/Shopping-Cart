@@ -1,6 +1,6 @@
-# MVP-Android-Example - SHOPPING CART ANDROID APP
+# Shopping Cart Android App (MVP)
 
-ShoppingCart app is an sample that demonstrates how the MVP architecture works
+Simple shopping cart android app that aims to demonstrate the MVP design
 
 ## Getting Started
 
